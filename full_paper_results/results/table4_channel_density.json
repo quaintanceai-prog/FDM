@@ -1,0 +1,12 @@
+{
+  "description": "Table 4: Channel density scaling (extra_acc at fixed token budget)",
+  "architecture": "gpt2_medium_345M",
+  "metric": "extra_acc (mean per-channel retrieval)",
+  "results": {
+    "40ch": 0.2788,
+    "20ch_dense": 0.7865,
+    "10ch_dense": 0.945
+  },
+  "progression": "28% -> 79% -> 95%",
+  "source_dir": "channel_density/results/gpt2/"
+}

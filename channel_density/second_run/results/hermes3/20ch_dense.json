@@ -1,0 +1,26 @@
+{
+  "model": "hermes3",
+  "config": "20ch_dense",
+  "num_channels": 20,
+  "carrier_spacing": "dense",
+  "action_acc": 0.756,
+  "rule_acc": 0.524,
+  "meta_acc": 0.756,
+  "fact_acc": 0.76,
+  "extra_acc": 0.407,
+  "mean_per_channel_acc": 0.407,
+  "per_channel": {
+    "8": 0.458,
+    "9": 0.392,
+    "10": 0.344,
+    "11": 0.504,
+    "12": 0.314,
+    "13": 0.338,
+    "14": 0.41,
+    "15": 0.428,
+    "16": 0.326,
+    "17": 0.468,
+    "18": 0.362,
+    "19": 0.54
+  }
+}

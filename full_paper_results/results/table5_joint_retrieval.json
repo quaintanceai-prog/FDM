@@ -1,0 +1,19 @@
+{
+  "description": "Table 5: Joint retrieval - all 32 extra channels correct simultaneously",
+  "metric": "all_32_correct_pct",
+  "results": {
+    "hermes3_3B": {"n": 5000, "joint": 99.94, "source": "nhop_hermes3.json"},
+    "qwen3_0.6B": {"n": 5000, "joint": 94.18, "source": "nhop_qwen3.json"},
+    "gpt2_medium_345M": {"n": 5000, "joint": 53.32, "source": "nhop_gpt2.json"},
+    "lfm2_1.2B": {"n": 5000, "joint": 0.08, "source": "nhop_lfm2.json",
+                  "note": "High-frequency cliff at ch 35-39; ch 8-34 retain ~100% per-channel"}
+  },
+  "joint_accuracy_1500": {
+    "note": "Standalone joint_accuracy_multi.py evaluation (n=1500, different methodology)",
+    "hermes3_3B": 99.93,
+    "qwen3_0.6B": 94.67,
+    "lfm2_1.2B": 2.07,
+    "gpt2_medium_345M": "not available; use n=5000 nhop result above"
+  },
+  "source_dir": "joint_retrieval/results/"
+}

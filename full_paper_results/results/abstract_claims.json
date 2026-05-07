@@ -1,0 +1,61 @@
+{
+  "description": "Maps every numerical claim in the paper abstract to its source file",
+  "claims": [
+    {
+      "claim": "GPT-2 Medium retrieval accuracy 98.3%",
+      "source": "scaling_replication/results/per_model/gpt2_40ch_eval.json OR commit 40ch turbo v3 Feb 17"
+    },
+    {
+      "claim": "Qwen3 retrieval accuracy 99.0%",
+      "source": "joint_retrieval/results/joint_accuracy_qwen3.json -> action_accuracy"
+    },
+    {
+      "claim": "LFM2.5 retrieval accuracy 98.6%",
+      "source": "joint_retrieval/results/joint_accuracy_lfm2.json -> action_accuracy"
+    },
+    {
+      "claim": "Hermes3 retrieval accuracy 98.7%",
+      "source": "joint_retrieval/results/joint_accuracy_hermes3.json -> action_accuracy"
+    },
+    {
+      "claim": "115K training samples",
+      "source": "commit log Feb 17 (40ch turbo v3 training scale)"
+    },
+    {
+      "claim": "100% compositional accuracy across all 1-5 hops for all architectures",
+      "source": "nhop_composition/results/nhop_{gpt2,qwen3,lfm2,hermes3}.json -> hop_results"
+    },
+    {
+      "claim": "Channel density 28% -> 79% -> 95%",
+      "source": "channel_density/results/gpt2/{40ch,20ch_dense,10ch_dense}.json -> extra_acc"
+    },
+    {
+      "claim": "Joint retrieval Hermes3 99.9%",
+      "source": "joint_retrieval/results/nhop_hermes3.json -> all_32_correct_pct"
+    },
+    {
+      "claim": "Joint retrieval Qwen3 94.2%",
+      "source": "joint_retrieval/results/nhop_qwen3.json -> all_32_correct_pct"
+    },
+    {
+      "claim": "Joint retrieval GPT-2 53.3%",
+      "source": "joint_retrieval/results/nhop_gpt2.json -> all_32_correct_pct"
+    },
+    {
+      "claim": "LFM2.5 joint <1%",
+      "source": "joint_retrieval/results/nhop_lfm2.json -> all_32_correct_pct (0.08%)"
+    },
+    {
+      "claim": "LFM2.5 cliff at channels 35-39",
+      "source": "joint_retrieval/results/joint_accuracy_lfm2.json -> per_channel"
+    },
+    {
+      "claim": "Signal corruption collapse at sigma=0.5",
+      "source": "signal_corruption/results/corruption_{gpt2,ptgt_qwen3,ptgt_lfm2,ptgt_hermes3}.txt"
+    },
+    {
+      "claim": "Cross-length transfer 512->1024 100%, 1024->512 47%",
+      "source": "cross_length_transfer/results/diagonal_results.txt"
+    }
+  ]
+}

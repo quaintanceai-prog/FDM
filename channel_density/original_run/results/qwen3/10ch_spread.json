@@ -1,0 +1,16 @@
+{
+  "model": "qwen3",
+  "config": "10ch_spread",
+  "num_channels": 10,
+  "carrier_spacing": "spread",
+  "action_acc": 0.292,
+  "rule_acc": 0.218,
+  "meta_acc": 0.244,
+  "fact_acc": 0.138,
+  "extra_acc": 0.26,
+  "mean_per_channel_acc": 0.26,
+  "per_channel": {
+    "8": 0.268,
+    "9": 0.252
+  }
+}

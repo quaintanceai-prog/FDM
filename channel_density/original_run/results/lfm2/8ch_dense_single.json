@@ -1,0 +1,13 @@
+{
+  "model": "lfm2",
+  "config": "8ch_dense_single",
+  "num_channels": 8,
+  "carrier_spacing": "dense",
+  "action_acc": 0.98,
+  "rule_acc": 0.898,
+  "meta_acc": 0.988,
+  "fact_acc": 0.964,
+  "extra_acc": 0.0,
+  "mean_per_channel_acc": 0.0,
+  "per_channel": {}
+}

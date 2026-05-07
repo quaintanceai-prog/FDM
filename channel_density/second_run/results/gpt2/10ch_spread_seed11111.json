@@ -1,0 +1,16 @@
+{
+  "model": "gpt2",
+  "config": "10ch_spread",
+  "num_channels": 10,
+  "carrier_spacing": "spread",
+  "action_acc": 0.862,
+  "rule_acc": 0.362,
+  "meta_acc": 0.886,
+  "fact_acc": 0.794,
+  "extra_acc": 0.879,
+  "mean_per_channel_acc": 0.879,
+  "per_channel": {
+    "8": 0.934,
+    "9": 0.824
+  }
+}

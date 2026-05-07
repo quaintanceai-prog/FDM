@@ -1,0 +1,16 @@
+{
+  "description": "Table 2: 40-channel FDM retrieval accuracy (action_acc, n=1500, stage 4)",
+  "metric": "action_accuracy",
+  "results": {
+    "gpt2_medium_345M": 98.3,
+    "qwen3_0.6B": 99.0,
+    "lfm2_1.2B": 98.6,
+    "hermes3_3B": 98.7
+  },
+  "source_files": {
+    "gpt2_medium_345M": "scaling_replication/results/per_model/gpt2_40ch_eval.json",
+    "qwen3_0.6B": "joint_retrieval/results/joint_accuracy_qwen3.json",
+    "lfm2_1.2B": "joint_retrieval/results/joint_accuracy_lfm2.json",
+    "hermes3_3B": "joint_retrieval/results/joint_accuracy_hermes3.json"
+  }
+}

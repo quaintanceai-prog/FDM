@@ -1,0 +1,16 @@
+{
+  "model": "lfm2",
+  "config": "10ch_dense",
+  "num_channels": 10,
+  "carrier_spacing": "dense",
+  "action_acc": 1.0,
+  "rule_acc": 0.972,
+  "meta_acc": 1.0,
+  "fact_acc": 0.996,
+  "extra_acc": 0.999,
+  "mean_per_channel_acc": 0.999,
+  "per_channel": {
+    "8": 0.998,
+    "9": 1.0
+  }
+}

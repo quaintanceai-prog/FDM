@@ -1,0 +1,26 @@
+{
+  "model": "lfm2",
+  "config": "lc_20ch_single_115k",
+  "num_channels": 20,
+  "carrier_spacing": "dense",
+  "action_acc": 0.59,
+  "rule_acc": 0.13,
+  "meta_acc": 0.584,
+  "fact_acc": 0.294,
+  "extra_acc": 0.7935,
+  "mean_per_channel_acc": 0.7935,
+  "per_channel": {
+    "8": 0.722,
+    "9": 0.778,
+    "10": 0.79,
+    "11": 0.77,
+    "12": 0.776,
+    "13": 0.778,
+    "14": 0.846,
+    "15": 0.84,
+    "16": 0.774,
+    "17": 0.826,
+    "18": 0.792,
+    "19": 0.83
+  }
+}

@@ -1,0 +1,8 @@
+
+# Channel density experiment artifacts
+**/*.pyc
+**/__pycache__/
+channel_density/__pycache__/
+channel_density/channel_scaling_data/
+channel_density/channel_scaling_models/
+channel_density/logs/

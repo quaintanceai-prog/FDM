@@ -1,0 +1,16 @@
+{
+  "model": "hermes3",
+  "config": "10ch_spread",
+  "num_channels": 10,
+  "carrier_spacing": "spread",
+  "action_acc": 0.86,
+  "rule_acc": 0.838,
+  "meta_acc": 0.836,
+  "fact_acc": 0.796,
+  "extra_acc": 0.803,
+  "mean_per_channel_acc": 0.8029999999999999,
+  "per_channel": {
+    "8": 0.82,
+    "9": 0.786
+  }
+}

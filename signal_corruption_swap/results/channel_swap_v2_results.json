@@ -1,0 +1,62 @@
+{
+  "gpt2_STATUS_swap": {
+    "flip_rate": 1.0,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "qwen3_STATUS_swap": {
+    "flip_rate": 1.0,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "lfm2_STATUS_swap": {
+    "flip_rate": 1.0,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "hermes3_STATUS_swap": {
+    "flip_rate": 1.0,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "gpt2_META_emergency": {
+    "flip_rate": 0.41,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "qwen3_META_emergency": {
+    "flip_rate": 0.41,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "lfm2_META_emergency": {
+    "flip_rate": 0.41,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "hermes3_META_emergency": {
+    "flip_rate": 0.41,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "gpt2_META_lockdown": {
+    "flip_rate": 0.38,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "qwen3_META_lockdown": {
+    "flip_rate": 0.38,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "lfm2_META_lockdown": {
+    "flip_rate": 0.38,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  },
+  "hermes3_META_lockdown": {
+    "flip_rate": 0.38,
+    "correct_flip_rate": 1.0,
+    "n": 100
+  }
+}

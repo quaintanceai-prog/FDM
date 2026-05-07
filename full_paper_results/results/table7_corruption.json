@@ -1,0 +1,34 @@
+{
+  "description": "Table 7: Signal corruption results (n=100 per architecture)",
+  "collapse_point": "sigma=0.5",
+  "clean_to_corrupted": {
+    "gpt2_medium_345M": {
+      "metric": "action_accuracy",
+      "clean": 1.000,
+      "corrupted_range": [0.220, 0.260],
+      "plateau": 0.23
+    },
+    "qwen3_0.6B": {
+      "metric": "P(tgt)",
+      "clean": 0.213,
+      "corrupted_range": [1e-5, 3e-4],
+      "full_vocab_chance": 6.6e-6
+    },
+    "lfm2_1.2B": {
+      "metric": "P(tgt)",
+      "clean": 0.999,
+      "corrupted_range": [0.178, 0.185],
+      "plateau": 0.18,
+      "subvocab_chance": 0.2
+    },
+    "hermes3_3B": {
+      "metric": "P(tgt)",
+      "clean": 0.999,
+      "corrupted_range": [0.100, 0.113],
+      "plateau": 0.10,
+      "subvocab_chance": 0.1
+    }
+  },
+  "interpretation": "All architectures collapse immediately at sigma=0.5 with no recovery through sigma=20. Collapse is to question-constrained answer subspace (LFM2.5 ~1/5, Hermes3 ~1/10) or near full-vocab chance (Qwen3).",
+  "source_dir": "signal_corruption/results/"
+}

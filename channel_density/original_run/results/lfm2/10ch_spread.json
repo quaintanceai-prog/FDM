@@ -1,0 +1,16 @@
+{
+  "model": "lfm2",
+  "config": "10ch_spread",
+  "num_channels": 10,
+  "carrier_spacing": "spread",
+  "action_acc": 0.968,
+  "rule_acc": 0.72,
+  "meta_acc": 0.96,
+  "fact_acc": 0.912,
+  "extra_acc": 0.979,
+  "mean_per_channel_acc": 0.979,
+  "per_channel": {
+    "8": 0.984,
+    "9": 0.974
+  }
+}

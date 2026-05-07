@@ -1,0 +1,16 @@
+{
+  "model": "gpt2",
+  "config": "10ch_dense",
+  "num_channels": 10,
+  "carrier_spacing": "dense",
+  "action_acc": 0.848,
+  "rule_acc": 0.424,
+  "meta_acc": 0.858,
+  "fact_acc": 0.764,
+  "extra_acc": 0.849,
+  "mean_per_channel_acc": 0.849,
+  "per_channel": {
+    "8": 0.8,
+    "9": 0.898
+  }
+}

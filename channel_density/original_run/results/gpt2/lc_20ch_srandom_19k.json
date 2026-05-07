@@ -1,0 +1,26 @@
+{
+  "model": "gpt2",
+  "config": "lc_20ch_srandom_19k",
+  "num_channels": 20,
+  "carrier_spacing": "dense",
+  "action_acc": 0.85,
+  "rule_acc": 0.36,
+  "meta_acc": 0.83,
+  "fact_acc": 0.9,
+  "extra_acc": 0.757,
+  "mean_per_channel_acc": 0.757,
+  "per_channel": {
+    "8": 0.802,
+    "9": 0.738,
+    "10": 0.798,
+    "11": 0.788,
+    "12": 0.76,
+    "13": 0.766,
+    "14": 0.772,
+    "15": 0.668,
+    "16": 0.842,
+    "17": 0.73,
+    "18": 0.694,
+    "19": 0.726
+  }
+}

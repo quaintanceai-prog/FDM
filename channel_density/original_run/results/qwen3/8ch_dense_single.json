@@ -1,0 +1,13 @@
+{
+  "model": "qwen3",
+  "config": "8ch_dense_single",
+  "num_channels": 8,
+  "carrier_spacing": "dense",
+  "action_acc": 0.098,
+  "rule_acc": 0.138,
+  "meta_acc": 0.118,
+  "fact_acc": 0.024,
+  "extra_acc": 0.0,
+  "mean_per_channel_acc": 0.0,
+  "per_channel": {}
+}

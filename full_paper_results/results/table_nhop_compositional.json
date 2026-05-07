@@ -1,0 +1,14 @@
+{
+  "description": "N-hop compositional reasoning - action accuracy per hop count",
+  "metric": "action_accuracy_per_hop",
+  "n_per_hop": 1000,
+  "total_n": 5000,
+  "results": {
+    "gpt2_medium_345M":   {"1": 100.0, "2": 100.0, "3": 100.0, "4": 100.0, "5": 100.0},
+    "qwen3_0.6B":         {"1": 100.0, "2": 100.0, "3": 100.0, "4": 100.0, "5": 100.0},
+    "lfm2_1.2B":          {"1": 100.0, "2": 100.0, "3": 100.0, "4": 100.0, "5": 100.0},
+    "hermes3_3B":         {"1": 100.0, "2": 100.0, "3": 100.0, "4": 100.0, "5": 100.0}
+  },
+  "summary": "Uniform 100% compositional accuracy across all hop counts and architectures. No compositionality gap.",
+  "source_dir": "nhop_composition/results/"
+}

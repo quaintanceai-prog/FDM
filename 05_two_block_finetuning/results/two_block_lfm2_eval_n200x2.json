@@ -1,0 +1,21 @@
+{
+  "round_999": {
+    "n_samples": 200,
+    "slot_correct": 6319,
+    "slot_total": 6400,
+    "n_sample_all": 150
+  },
+  "round_2024": {
+    "n_samples": 200,
+    "slot_correct": 6333,
+    "slot_total": 6400,
+    "n_sample_all": 155
+  },
+  "combined": {
+    "n_samples": 400,
+    "slot": 0.9884375,
+    "slot_ci_pp": 0.1857557118529926,
+    "joint": 0.7625,
+    "joint_ci_pp": 4.158022496309036
+  }
+}
