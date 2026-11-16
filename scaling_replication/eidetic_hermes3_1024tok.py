@@ -3,7 +3,7 @@ Eidetic Memory FDM — Hermes-3-Llama-3.2-3B (1024-token)
 
 FDM encoding and evaluation script.
 
-Architecture: Qwen/Hermes-3-Llama-3.2-3B (1024-token) (28 layers, GQA 16Q/8KV, RoPE, SwiGLU)
+Architecture: NousResearch/Hermes-3-Llama-3.2-3B, 1024-token FDM block (Llama 3.2 3B: 28 layers, GQA, RoPE, SwiGLU; Llama 3.1 tokenizer)
 Vocab: 128,256 tokens
 Encoding: 40-channel ASK-FDM, turbo structure (512+512 = 1024 tokens)
 
@@ -29,7 +29,7 @@ import argparse
 # Model configuration
 # ============================================================
 
-MODEL_ID = "Qwen/Hermes-3-Llama-3.2-3B (1024-token)"
+MODEL_ID = "NousResearch/Hermes-3-Llama-3.2-3B"
 MODEL_SHORT = "hermes3_3b"
 VOCAB_SIZE = 128256
 DTYPE = torch.bfloat16
