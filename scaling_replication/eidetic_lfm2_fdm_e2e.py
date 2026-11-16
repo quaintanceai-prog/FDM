@@ -3,7 +3,7 @@ Eidetic Memory FDM — LiquidAI LFM2.5-1.2B-Base
 
 FDM encoding and evaluation script.
 
-Architecture: Qwen/LiquidAI LFM2.5-1.2B-Base (28 layers, GQA 16Q/8KV, RoPE, SwiGLU)
+Architecture: LiquidAI/LFM2.5-1.2B-Base (hybrid: 10 gated-convolution blocks + 6 GQA attention blocks, 16 layers)
 Vocab: 65,536 tokens
 Encoding: 40-channel ASK-FDM, turbo structure (256+256 = 512 tokens)
 
@@ -29,7 +29,7 @@ import argparse
 # Model configuration
 # ============================================================
 
-MODEL_ID = "Qwen/LiquidAI LFM2.5-1.2B-Base"
+MODEL_ID = "LiquidAI/LFM2.5-1.2B-Base"
 MODEL_SHORT = "lfm2"
 VOCAB_SIZE = 65536
 DTYPE = torch.bfloat16
