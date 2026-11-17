@@ -1,0 +1,11 @@
+{
+  "model": "lfm2",
+  "tokenizer": "LiquidAI/LFM2.5-1.2B-Base",
+  "n": 1500,
+  "fdm_block_tokens_mean": 516.1506666666667,
+  "fdm_block_tokens_min": 510,
+  "fdm_block_tokens_max": 530,
+  "plaintext_block_tokens_mean": 311.6666666666667,
+  "plaintext_block_tokens_min": 297,
+  "plaintext_block_tokens_max": 328
+}

@@ -1,0 +1,11 @@
+{
+  "model": "gpt2",
+  "tokenizer": "openai-community/gpt2-medium",
+  "n": 1500,
+  "fdm_block_tokens_mean": 543.0866666666667,
+  "fdm_block_tokens_min": 514,
+  "fdm_block_tokens_max": 575,
+  "plaintext_block_tokens_mean": 285.8786666666667,
+  "plaintext_block_tokens_min": 272,
+  "plaintext_block_tokens_max": 299
+}

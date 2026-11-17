@@ -1,0 +1,11 @@
+{
+  "model": "hermes3",
+  "tokenizer": "NousResearch/Hermes-3-Llama-3.2-3B",
+  "n": 1500,
+  "fdm_block_tokens_mean": 521.9533333333334,
+  "fdm_block_tokens_min": 512,
+  "fdm_block_tokens_max": 570,
+  "plaintext_block_tokens_mean": 224.15666666666667,
+  "plaintext_block_tokens_min": 213,
+  "plaintext_block_tokens_max": 237
+}

@@ -1,0 +1,253 @@
+{
+  "condition": "fdm",
+  "n": 500,
+  "action": 97.8,
+  "rule": 38.8,
+  "meta": 100.0,
+  "fact": 100.0,
+  "extra_mean": 99.86250000000001,
+  "per_channel": {
+    "TEAM": 100.0,
+    "REGION": 100.0,
+    "PHASE": 100.0,
+    "COMM": 100.0,
+    "ASSET": 100.0,
+    "WINDOW": 100.0,
+    "COVER": 99.8,
+    "SUPPORT": 99.8,
+    "THREAT": 100.0,
+    "WEATHER": 100.0,
+    "TERRAIN": 99.8,
+    "EXTRACT": 99.6,
+    "CIPHER": 99.8,
+    "FREQ": 100.0,
+    "PAYLOAD": 100.0,
+    "ROUTE": 99.6,
+    "DURATION": 99.8,
+    "CONTACT": 99.8,
+    "FUEL": 99.8,
+    "ALTITUDE": 100.0,
+    "VISIBILITY": 100.0,
+    "NOISE": 100.0,
+    "FORMATION": 99.6,
+    "ARMOR": 99.8,
+    "SIGNAL": 99.8,
+    "MORALE": 100.0,
+    "SUPPLY": 99.8,
+    "INTEL": 99.6,
+    "EVAC": 99.6,
+    "WEATHER2": 100.0,
+    "DOCTRINE": 99.8,
+    "COMMS": 99.8
+  },
+  "bands": {
+    "low ch8-13": [
+      100.0,
+      100.0
+    ],
+    "mid-low ch14-20": [
+      99.6,
+      100.0
+    ],
+    "mid-high ch21-30": [
+      99.6,
+      100.0
+    ],
+    "high ch31-35": [
+      99.6,
+      100.0
+    ],
+    "very high ch36-39": [
+      99.6,
+      100.0
+    ]
+  },
+  "joint": {
+    "1": 100.0,
+    "2": 100.0,
+    "4": 100.0,
+    "8": 99.8,
+    "16": 99.0,
+    "24": 98.4,
+    "32": 97.2
+  },
+  "extra_mean_strict": 99.82499999999999,
+  "per_channel_strict": {
+    "TEAM": 100.0,
+    "REGION": 100.0,
+    "PHASE": 100.0,
+    "COMM": 100.0,
+    "ASSET": 100.0,
+    "WINDOW": 100.0,
+    "COVER": 99.8,
+    "SUPPORT": 99.8,
+    "THREAT": 100.0,
+    "WEATHER": 100.0,
+    "TERRAIN": 99.8,
+    "EXTRACT": 99.6,
+    "CIPHER": 99.8,
+    "FREQ": 100.0,
+    "PAYLOAD": 99.8,
+    "ROUTE": 99.6,
+    "DURATION": 99.8,
+    "CONTACT": 99.8,
+    "FUEL": 99.8,
+    "ALTITUDE": 99.8,
+    "VISIBILITY": 100.0,
+    "NOISE": 100.0,
+    "FORMATION": 99.6,
+    "ARMOR": 99.8,
+    "SIGNAL": 99.8,
+    "MORALE": 99.6,
+    "SUPPLY": 99.8,
+    "INTEL": 99.4,
+    "EVAC": 99.6,
+    "WEATHER2": 100.0,
+    "DOCTRINE": 99.6,
+    "COMMS": 99.8
+  },
+  "bands_strict": {
+    "low ch8-13": [
+      100.0,
+      100.0
+    ],
+    "mid-low ch14-20": [
+      99.6,
+      100.0
+    ],
+    "mid-high ch21-30": [
+      99.6,
+      100.0
+    ],
+    "high ch31-35": [
+      99.4,
+      99.8
+    ],
+    "very high ch36-39": [
+      99.6,
+      100.0
+    ]
+  },
+  "joint_strict": {
+    "1": 100.0,
+    "2": 100.0,
+    "4": 100.0,
+    "8": 99.8,
+    "16": 99.0,
+    "24": 98.2,
+    "32": 97.0
+  },
+  "model": "gpt2",
+  "model_path": "<ANON>/fdm_40ch_turbo_v3_model_final",
+  "test_data": "/workspace/tests/gpt2_test.jsonl",
+  "max_new_tokens": 512,
+  "truncated": {
+    "condition": "fdm_trunc250",
+    "n": 500,
+    "action": 97.8,
+    "rule": 38.8,
+    "meta": 100.0,
+    "fact": 100.0,
+    "extra_mean": 99.65625,
+    "bands": {
+      "low ch8-13": [
+        100.0,
+        100.0
+      ],
+      "mid-low ch14-20": [
+        99.6,
+        100.0
+      ],
+      "mid-high ch21-30": [
+        99.6,
+        100.0
+      ],
+      "high ch31-35": [
+        99.6,
+        100.0
+      ],
+      "very high ch36-39": [
+        93.6,
+        100.0
+      ]
+    },
+    "joint": {
+      "1": 100.0,
+      "2": 100.0,
+      "4": 100.0,
+      "8": 99.8,
+      "16": 99.0,
+      "24": 98.4,
+      "32": 91.4
+    },
+    "extra_mean_strict": 99.56875,
+    "bands_strict": {
+      "low ch8-13": [
+        100.0,
+        100.0
+      ],
+      "mid-low ch14-20": [
+        99.6,
+        100.0
+      ],
+      "mid-high ch21-30": [
+        99.6,
+        100.0
+      ],
+      "high ch31-35": [
+        99.4,
+        99.8
+      ],
+      "very high ch36-39": [
+        92.2,
+        100.0
+      ]
+    },
+    "joint_strict": {
+      "1": 100.0,
+      "2": 100.0,
+      "4": 100.0,
+      "8": 99.8,
+      "16": 99.0,
+      "24": 98.2,
+      "32": 89.8
+    },
+    "per_channel_strict": {
+      "TEAM": 100.0,
+      "REGION": 100.0,
+      "PHASE": 100.0,
+      "COMM": 100.0,
+      "ASSET": 100.0,
+      "WINDOW": 100.0,
+      "COVER": 99.8,
+      "SUPPORT": 99.8,
+      "THREAT": 100.0,
+      "WEATHER": 100.0,
+      "TERRAIN": 99.8,
+      "EXTRACT": 99.6,
+      "CIPHER": 99.8,
+      "FREQ": 100.0,
+      "PAYLOAD": 99.8,
+      "ROUTE": 99.6,
+      "DURATION": 99.8,
+      "CONTACT": 99.8,
+      "FUEL": 99.8,
+      "ALTITUDE": 99.8,
+      "VISIBILITY": 100.0,
+      "NOISE": 100.0,
+      "FORMATION": 99.6,
+      "ARMOR": 99.8,
+      "SIGNAL": 99.8,
+      "MORALE": 99.6,
+      "SUPPLY": 99.8,
+      "INTEL": 99.4,
+      "EVAC": 99.6,
+      "WEATHER2": 100.0,
+      "DOCTRINE": 99.0,
+      "COMMS": 92.2
+    }
+  },
+  "generated_tokens_mean": 245.22,
+  "generated_tokens_max": 264,
+  "generated_over_250_pct": 13.8
+}

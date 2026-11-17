@@ -1,0 +1,11 @@
+{
+  "model": "qwen3",
+  "tokenizer": "Qwen/Qwen3-0.6B-Base",
+  "n": 1500,
+  "fdm_block_tokens_mean": 512.6753333333334,
+  "fdm_block_tokens_min": 511,
+  "fdm_block_tokens_max": 524,
+  "plaintext_block_tokens_mean": 224.51266666666666,
+  "plaintext_block_tokens_min": 212,
+  "plaintext_block_tokens_max": 236
+}
