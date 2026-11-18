@@ -25,7 +25,6 @@ Only the `[MEMORY]` block content differs:
 
 | Model | Hop 1 | Hop 2 | Hop 3 | Hop 4 | Hop 5 |
 |---|---|---|---|---|---|
-| GPT-2 Medium | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
 | LFM2.5-1.2B  | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
 | Qwen3-0.6B   | 100.0% | 100.0% | 100.0% | 100.0% | 100.0% |
 | Hermes3-3B   | pending | pending | pending | pending | pending |
@@ -51,7 +50,6 @@ See the main paper for:
 
 ## Status
 
-- ✅ GPT-2 Medium: trained, evaluated
 - ✅ LFM2.5-1.2B: trained, evaluated
 - ✅ Qwen3-0.6B: trained, evaluated
 - ⏳ Hermes3-3B: training pending
@@ -59,7 +57,7 @@ See the main paper for:
 Model weights to be uploaded to HuggingFace:
 - `<ANON>/nhop-plaintext-lfm2` (2.2 GB)
 - `<ANON>/nhop-plaintext-qwen3` (1.2 GB)
-- GPT-2 and Hermes3 pending training completion
+- Hermes3 pending training completion
 
 ## Reproduction
 

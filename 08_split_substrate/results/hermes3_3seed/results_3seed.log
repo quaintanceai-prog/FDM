@@ -252,10 +252,10 @@ masked baseline: masked/ctx_only_masked_seed1.json
 uploaded
 
 [11:44:55] === done. results in /workspace/clean_hermes3/FDM_IN_WEIGHTS/two_substrates_review/hermes3  (log: /workspace/clean_hermes3/FDM_IN_WEIGHTS/two_substrates_review/hermes3/run.log)
-root@13d26c8e6aaf:/workspace/<ANON-REPO>/two_substrates_review# '
+root@13d26c8e6aaf:/workspace/FDM/08_split_substrate# '
 > 
 > '
 -bash: $'\n\n': command not found
-root@13d26c8e6aaf:/workspace/<ANON-REPO>/two_substrates_review# 
-root@13d26c8e6aaf:/workspace/<ANON-REPO>/two_substrates_review# 
+root@13d26c8e6aaf:/workspace/FDM/08_split_substrate# 
+root@13d26c8e6aaf:/workspace/FDM/08_split_substrate# 
 

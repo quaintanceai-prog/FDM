@@ -16,7 +16,7 @@ git config --global url."git@github.com:".insteadOf "https://github.com/"
 
 cd /workspace
 git clone https://github.com/quaintanceai-prog/FDM.git
-cd <ANON-REPO> && git checkout main
+cd FDM/08_split_substrate
 cd two_substrates_review
 
 export HF_TOKEN=hf_...                    # a token with read access to the private host repos
@@ -120,39 +120,3 @@ MODEL=gpt2 SEEDS="1 2 3" SPLITS="4 8 16" N_EVAL=200 SKIP_DONE=0 \
 Results land in `/workspace/clean_gpt2/FDM_IN_WEIGHTS/two_substrates_review/gpt2/`.
 To force a specific prefix length (e.g. to match another host): `N_KV_POSITIONS_OVERRIDE=128`.
 
-## Committing results
-
-```bash
-cd /workspace/<ANON-REPO>/two_substrates_review
-SRC=/workspace/clean_<model>/FDM_IN_WEIGHTS/two_substrates_review/<model>   # e.g. clean_gpt2 / gpt2
-mkdir -p results/<model>_clean
-cp -r $SRC/{seed1,seed2,seed3,masked,sanity} results/<model>_clean/
-cp $SRC/run.log results/<model>_clean/run.log
-find results/<model>_clean -name "*.pt" -delete       # heads live on HF, not in git
-git add results/<model>_clean && git commit -m "Add <model> disjoint sweep (3 seeds, n=200, splits 4/8/16)"
-git push origin main
-```
-
-Write heads are uploaded by stage 8 to `<ANON>/fdm-two-substrates-heads` (model repo)
-and the JSONs to `<ANON>/fdm-two-substrates-review` (dataset repo), under
-`<model>` or `<model>_<OUT_TAG>`.
-
-## Environment variables of `startup.sh`
-
-| Variable | Default | Meaning |
-|---|---|---|
-| `MODEL` | qwen3 | qwen3, hermes3, lfm25, gpt2 |
-| `SEEDS` | "1" | write-head seeds |
-| `SPLITS` | "4 8" | prefix-only channel counts (Block A size) |
-| `N_EVAL` | 100 | memories per evaluation (200 for reported numbers) |
-| `STEPS_4`, `STEPS_8PLUS` | 5000, 15000 | write-head steps for split 4 / splits >= 8 |
-| `PARTITION` | interleaved | or contiguous |
-| `SKIP_DONE` | 1 | set 0 for a clean run (otherwise existing JSONs are reused) |
-| `RUN_SANITY`, `RUN_MASKED`, `RUN_TRAIN`, `UPLOAD` | 1 | stage switches |
-| `WORK` | /workspace | root for host, encoder and outputs |
-| `OUT_TAG` | (none) | suffix for the output dir and HF path, keeps reruns separate |
-| `LABEL_ASSESSMENT` | 1 | bare_hop hosts: assessment tokens in the loss (0 = Context-only ablation) |
-| `N_KV_POSITIONS_OVERRIDE` | (per model) | prefix length for the hybrid script |
-| `VOCAB_OVERRIDE`, `A_LOW` | (per model), 0.25 | encoder overrides for the hybrid script |
-| `SANITY_MIN` | 0.95 | stage-4 gate on Block B slot accuracy |
-| `DRY_RUN` | 0 | print the commands instead of running |
