@@ -1,0 +1,11 @@
+{
+ "model": "lfm2",
+ "hops": 5,
+ "n_samples": 965,
+ "fact_standard_pct": 82.860103626943,
+ "fact_reference_only_pct": 99.27770859277709,
+ "consulted_values_scored": 4825,
+ "consulted_values_in_reference": 4015,
+ "consulted_values_omitted_from_reference": 810,
+ "ceiling_standard_pct": 83.21243523316062
+}
