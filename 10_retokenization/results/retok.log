@@ -1,0 +1,9 @@
+gpt2     vocab= 50257  changed=0/500  len==512: 0/500  re-tokenized length min/mean/max=516/542.5/575  uniquely decodable alphabet: True
+         39/64 mapped tokens begin with a space; the rest are word-internal pieces that can merge
+qwen3    vocab=151936  changed=0/500  len==512: 314/500  re-tokenized length min/mean/max=511/512.6/517  uniquely decodable alphabet: True
+         17/64 mapped tokens begin with a space; the rest are word-internal pieces that can merge
+lfm2     vocab= 65536  changed=0/500  len==512: 21/500  re-tokenized length min/mean/max=511/516.3/528  uniquely decodable alphabet: False
+         35/64 mapped tokens begin with a space; the rest are word-internal pieces that can merge
+[transformers] Ignoring clean_up_tokenization_spaces=True for BPE tokenizer TokenizersBackend. The clean_up_tokenization post-processing step is designed for WordPiece tokenizers and is destructive for BPE (it strips spaces before punctuation). Set clean_up_tokenization_spaces=False to suppress this warning, or set clean_up_tokenization_spaces_for_bpe_even_though_it_will_corrupt_output=True to force cleanup anyway.
+hermes3  vocab=128256  changed=0/500  len==512: 1/500  re-tokenized length min/mean/max=512/521.7/547  uniquely decodable alphabet: True
+         34/64 mapped tokens begin with a space; the rest are word-internal pieces that can merge
