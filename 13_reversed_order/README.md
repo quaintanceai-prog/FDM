@@ -6,6 +6,23 @@ exact reverse (ch39 emitted first, ch8 last), so the highest carriers are writte
 lowest last. A random fixed permutation is a straightforward follow-up with the same script
 (`--order random --seed N`) and has not been run.
 
+## In plain terms
+
+We trained the LFM2.5 host to write the 32 Context values in reverse order, following the
+reviewer's suggestion of a different emission order (the highest carrier is written first, and
+since the model is autoregressive, writing a value means it has to read that channel at that
+moment). So in the reversed version it has to read ch39 before anything else, then ch38, and so on
+down to ch8, without the earlier values it would normally have written in the forward order. A
+transformer generating text can attend to everything before it: when it is about to write COMMS
+(in the schema, it comes last) in the normal order, the 31 values it has already written are there
+to attend to. They do not contain COMMS's value, but they might help in other ways. Reversing the
+order tests this. The result is that with the 250-token cap, the errors moved to the channels now
+written last, the lowest carriers, so the original tail errors were caused by where a channel is
+written, not by its frequency. In reverse order the model still reads the block, but it makes a
+few mistakes in almost every answer (77-97% per channel; all 32 correct in 6% of answers), where in
+the original order it makes none. More training did not fix this. These results on the LFM2.5
+model and the scripts used are in this folder.
+
 `shuffled_order.py` finetunes the Table 2 LFM2.5 checkpoint to emit the 32 Context channels in
 the chosen order, then evaluates on the stage-4 test split at a 512-token cap and re-scores the
 same responses cut at 250 tokens, per channel and per emission position (strict NAME=VALUE).
